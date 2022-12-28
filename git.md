@@ -122,3 +122,5 @@ to be continued tmw
 1. 원격 저장소의 커밋을 원격 저장소로 가져와서(pull)
 2. 로컬에서 두 커밋을 병합 (추가 커밋 발생)
 3. 다시 Github로 push
+#### Git confliction?
+![git confliction](https://media.discordapp.net/attachments/1052083490675490846/1057538981190979624/image.png?width=1290&height=721)
