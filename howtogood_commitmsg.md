@@ -200,7 +200,7 @@ Fix stat cache
 Fix changelog entry
 Fix broken jsiexecutor search path
 ```
-* Fix A in B : B의 A를 수
+* Fix A in B : B의 A를 수정
 ```
 Fix calculation in process.uptime()
 Fix build warning in node_report.cc
