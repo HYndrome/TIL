@@ -3,7 +3,7 @@
 ## Git이란?
 협업할 때 쓰는 거????
 
--> 분산 **버전 관리 시스템** (Distributed Version Control Sysyems)
+-> **분산 버전 관리 시스템** (Distributed Version Control Sysyems)
 ![DVCS](https://han.gl/CgkWU)
 
 * 로컬 버전 관리 + 원격 저장소 버전 관리
@@ -48,7 +48,7 @@
   * 다양한 옵션을 통해 로그를 조회 가능
     * git log -1 : 1개 보기
     * git log --oneline : 한 줄로 보기
-    * git log -2 --oneline : 한 번에 2 개를 1 줄에 보기
+    * git log -2 --oneline : 한 번에 2 개를 1 줄에 보기 (-2와 --oneline의 순서가 바뀌어도 상관 없음)
 * git config --global user.email "`이메일주소`" : git 작성자의 email 정보를 저장
 * git config --global user.name "`이름`" : git 작성자의 이름 정보를 저장
 * git config --global -l : 현재 git 작성자의 email과 이름 정보를 반환
@@ -62,7 +62,7 @@
 Github는 원격저장소를 제공하는 서비스 중 하나
 ### 초기 Github(원격 저장소) 설정
 1. Github 접속 및 로그인
-2. Repoitories에 접속
+2. Repositories에 접속
 3. `New` 를 눌러 새로운 Repository 설정 및 생성
 4. 생성된 `repository URL` 복사
 5. 로컬 저장소에 원격 저장소 정보 설정
@@ -79,7 +79,7 @@ git remote add origin https://github.com/HYndrome/TIL.git
  ### Github 관련 Git 명령어
 * git remote add `원격저장소이름` `RepositoryURL` : 로컬 저장소에 원격 저장소 정보 저장
   * 보통 원격저장소이름으로 origin 사용
-* git remote rm `원격저장소이름` : 원격 저장소 삭
+* git remote rm `원격저장소이름` : 원격 저장소 삭제
 * git remote -v : 원격 저장소의 정보를 확인
 * git push `원격저장소이름` `브랜치이름`  : 로컬 저장소의 버전을 원격 저장소로 보냄
 ```
@@ -109,7 +109,7 @@ git pull origin master
 * 버전 관리에 상관 없는 자동으로 생성지어되는 더미 파일
 * 기밀이나 개인정보 같은 공유되서는 안되는 파일
 
-=> 깃헙에 올리지 않을 파일
+=> Github에 올리지 않을 파일
 #### 사용방법
 * .git 파일과 같은 경로에 .gitignore이라는 파일을 만들고 해당 파일에 무시할 파일 이름 입력
   * 파일이름
