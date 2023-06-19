@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- cdn으로 owl carousel의 css 파일 설치 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="owl-carousel owl-theme owl-carousel-1">
+    <div class="item">
+      <h4>1</h4>
+      <img src="assets/토르발즈.png" alt="1번 이미지">
+    </div>
+    <div class="item">
+      <h4>2</h4>
+      <img src="assets/최고심빙글빙글.jpeg" alt="2번 이미지">
+    </div>
+    <div class="item">
+      <h4>3</h4>
+      <img src="assets/토르발즈.png" alt="3번 이미지">
+    </div>
+    <div class="item">
+      <h4>4</h4>
+      <img src="assets/최고심빙글빙글.jpeg" alt="4번 이미지">
+    </div>
+    <div class="item">
+      <h4>5</h4>
+      <img src="assets/토르발즈.png" alt="5번 이미지">
+    </div>
+    <div class="item">
+      <h4>6</h4>
+      <img src="assets/최고심빙글빙글.jpeg" alt="6번 이미지">
+    </div>
+  </div>
+  <!-- <div class="owl-carousel owl-theme owl-carousel-2">
+    <div class="item">
+      <h4>1</h4>
+      <img src="assets/토르발즈.png" alt="1번 이미지">
+    </div>
+    <div class="item">
+      <h4>2</h4>
+      <img src="assets/최고심빙글빙글.jpeg" alt="2번 이미지">
+    </div>
+    <div class="item">
+      <h4>3</h4>
+      <img src="assets/토르발즈.png" alt="3번 이미지">
+    </div>
+    <div class="item">
+      <h4>4</h4>
+      <img src="assets/최고심빙글빙글.jpeg" alt="4번 이미지">
+    </div>
+    <div class="item">
+      <h4>5</h4>
+      <img src="assets/토르발즈.png" alt="5번 이미지">
+    </div>
+    <div class="item">
+      <h4>6</h4>
+      <img src="assets/최고심빙글빙글.jpeg" alt="6번 이미지">
+    </div>
+  </div> -->
+
+  <!-- cdn으로 owl carousel 실행을 위한 jquery 설치 및 owl carousel js 설치 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- owl carousel의 속성 지정 -->
+  <script type="text/javascript">
+    $('.owl-carousel-1').owlCarousel({
+        loop:false,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:2,
+                slideBy:2,
+            },
+            600:{
+                items:4,
+                slideBy:4,
+            },
+            1000:{
+                items:6,
+                slideBy:6,
+            },
+        }
+    })
+
+    // $('.owl-carousel-2').owlCarousel({
+    //     loop:false,
+    //     margin:10,
+    //     nav:false,
+    //     responsive:{
+    //         0:{
+    //             items:3,
+    //             slideBy:3,
+    //         },
+    //         1000:{
+    //             items:6,
+    //             slideBy:6,
+    //         },
+    //     }
+    // })
+  </script>
+</body>
+</html>
