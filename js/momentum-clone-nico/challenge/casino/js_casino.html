@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Random Number Game</h1>
+    <h2>
+      <span>Generate a number between 0 and </span
+      ><input id="input-number" type="number" />
+    </h2>
+    <span>Guess the number: </span>
+    <input id="guess-number" type="number" />
+    <input id="guess-number-submit" type="submit" value="Play!" />
+    <p>
+      You chose: <span id="my-number"></span>, the machine chose:
+      <span id="random-number"></span>.
+    </p>
+    <h2 id="game-result"></h2>
+    <script src="random-number-game.js"></script>
+  </body>
+</html>
